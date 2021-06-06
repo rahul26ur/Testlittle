@@ -23,7 +23,7 @@ node{
     
     stage('PUSH image to Docker Hub')
     {
-        withCredentials([string(credentialsId: 'DockerHubPassword', variable: 'DHPWD')]) 
+        withCredentials([string(credentialsId: 'DockerHubPassword', variable: 'D1HPWD')]) 
         {
             sh "docker login -u vardhanns -p ${DHPWD}"
         }
